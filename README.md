@@ -31,4 +31,5 @@ Samples of most popular design patterns for java
 - The components of the Bridge Pattern comprise of an abstraction, refined abstraction, an implementer, and concrete implementer.
 <img src="https://www.javacodegeeks.com/wp-content/uploads/2015/09/class_diagram_3.jpg" alt="Bridge 2">
 
-
+## [Singleton](https://www.javacodegeeks.com/2015/09/singleton-design-pattern.html)
+<img src="https://www.javacodegeeks.com/wp-content/uploads/2015/09/singleton_class_diagram.jpg" alt="Singleton 1">
