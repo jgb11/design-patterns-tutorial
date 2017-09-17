@@ -33,3 +33,9 @@ Samples of most popular design patterns for java
 
 ## [Singleton](https://www.javacodegeeks.com/2015/09/singleton-design-pattern.html)
 <img src="https://www.javacodegeeks.com/wp-content/uploads/2015/09/singleton_class_diagram.jpg" alt="Singleton 1">
+
+## [Observer](https://www.javacodegeeks.com/2015/09/observer-design-pattern.html)
+- The key objects in this pattern are subject and observer.
+- A subject may have any number of dependent observers.
+- All observers are notified whenever the subject undergoes a change in its state. In response, each observer will query the subject to synchronize its state with the subject state.
+<img src="https://www.javacodegeeks.com/wp-content/uploads/2015/09/class_diagram_11.jpg" alt="Observer 1">
