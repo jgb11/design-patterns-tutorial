@@ -73,3 +73,18 @@ There are three main variations to the Proxy Pattern:
 1. A remote proxy provides a local representative for an object in a different address space.
 2. A virtual proxy creates expensive objects on demand.
 3. A protection proxy controls access to the original object. Protection proxies are useful when objects should have different access rights.
+
+## [Chain of responsibility](https://www.javacodegeeks.com/2015/09/chain-of-responsibility-design-pattern-2.html)
+<img src="https://www.javacodegeeks.com/wp-content/uploads/2015/09/chain_of_responsibility_class_diagram.jpg" alt="Chain of responsibility 1">
+
+Handler
+1. Defines an interface for handling requests.
+2. (Optionally) Implements the successor link.
+
+ConcreteHandler
+1. Handles requests it is responsible for.
+2. Can access its successor.
+3. If the ConcreteHandler can handle the request, it does so; otherwise it forwards the request to its successor.
+
+Client
+1. Initiates the request to a ConcreteHandler object on the chain.
