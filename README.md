@@ -55,3 +55,21 @@ The major participants of the Mediator Pattern are:
 1. Mediator: Defines an interface for communicating with Colleague objects.
 2. ConcreteMediator: Implements cooperative behavior by coordinating Colleague objects. It also knows and maintains its colleagues.
 3. Colleague Classes: Each Colleague class knows its Mediator object. Each colleague communicates with its mediator whenever it would have otherwise communicated with another colleague.
+
+## [Proxy](https://www.javacodegeeks.com/2015/09/proxy-design-pattern.html)
+- The client does not know about the proxy, the proxy acts as an original object for the client.
+<img src="https://www.javacodegeeks.com/wp-content/uploads/2015/09/Proxyclass_diagram_11.jpg" alt="Proxy 1">
+
+1. Proxy:
+- 1a. Maintains a reference that lets the proxy access the real subject. Proxy may refer to a Subject if the RealSubject and Subject interfaces are the same.
+- 1b. Provides an interface identical to Subject’s so that a proxy can be substituted for the real subject.
+- 1c. Controls access to the real subject and may be responsible for creating and deleting it.
+2. Subject:
+- 2a. Defines the common interface for RealSubject and Proxy so that a Proxy can be used anywhere a RealSubject is expected.
+3. RealSubject:
+- 3a. Defines the real object that the proxy represents.
+
+There are three main variations to the Proxy Pattern:
+1. A remote proxy provides a local representative for an object in a different address space.
+2. A virtual proxy creates expensive objects on demand.
+3. A protection proxy controls access to the original object. Protection proxies are useful when objects should have different access rights.
