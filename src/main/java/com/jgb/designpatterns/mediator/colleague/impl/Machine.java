@@ -1,7 +1,7 @@
-package com.jgb.designpatterns.mediator.impl;
+package com.jgb.designpatterns.mediator.colleague.impl;
 
-import com.jgb.designpatterns.mediator.Colleague;
-import com.jgb.designpatterns.mediator.MachineMediator;
+import com.jgb.designpatterns.mediator.colleague.Colleague;
+import com.jgb.designpatterns.mediator.mediatorcomponent.MachineMediator;
 
 /**
  * @author jgb

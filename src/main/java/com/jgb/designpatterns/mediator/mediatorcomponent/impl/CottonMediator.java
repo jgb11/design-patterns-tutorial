@@ -1,4 +1,4 @@
-package com.jgb.designpatterns.mediator.mediator.impl;
+package com.jgb.designpatterns.mediator.mediatorcomponent.impl;
 
 import com.jgb.designpatterns.mediator.colleague.Motor;
 import com.jgb.designpatterns.mediator.colleague.Sensor;
@@ -6,7 +6,7 @@ import com.jgb.designpatterns.mediator.colleague.SoilRemoval;
 import com.jgb.designpatterns.mediator.colleague.impl.Heater;
 import com.jgb.designpatterns.mediator.colleague.impl.Machine;
 import com.jgb.designpatterns.mediator.colleague.impl.Valve;
-import com.jgb.designpatterns.mediator.mediator.MachineMediator;
+import com.jgb.designpatterns.mediator.mediatorcomponent.MachineMediator;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 

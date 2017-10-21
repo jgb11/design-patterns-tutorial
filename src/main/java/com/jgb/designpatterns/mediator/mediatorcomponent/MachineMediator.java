@@ -1,4 +1,4 @@
-package com.jgb.designpatterns.mediator;
+package com.jgb.designpatterns.mediator.mediatorcomponent;
 
 /**
  * @author jgb
