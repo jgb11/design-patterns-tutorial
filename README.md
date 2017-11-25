@@ -108,3 +108,22 @@ Director
 Product
 - Represents the complex object under construction. ConcreteBuilder builds the product’s internal representation and defines the process by which it’s assembled.
 - Includes classes that define the constituent parts, including interfaces for assembling the parts into the final result.
+
+## [Flyweight](https://www.javacodegeeks.com/2015/09/flyweight-design-pattern.html)
+The intent of the Flyweight Pattern is to use shared objects to support large numbers of fine-grained objects efficiently.
+
+<img src="https://www.javacodegeeks.com/wp-content/uploads/2015/09/flyweight_class_diagram.jpg" alt="Flyweight 1">
+
+Flyweight
+- Declares an interface through which flyweights can receive and act on extrinsic state.
+
+ConcreteFlyweight
+- Implements the Flyweight interface and adds storage for intrinsic state, if any. A ConcreteFlyweight object must be sharable. Any state it stores must be intrinsic; that is, it must be independent of the ConcreteFlyweight object’s context.
+
+FlyweightFactory
+- Creates and manages flyweight objects.
+- Ensures that flyweights are shared properly. When a client requests a flyweight, the FlyweightFactory object supplies an existing instance or creates one, if none exists.
+
+Client
+- Maintains a reference to flyweight(s).
+- Computes or stores the extrinsic state of flyweight(s).
