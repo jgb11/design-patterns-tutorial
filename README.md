@@ -88,3 +88,23 @@ ConcreteHandler
 
 Client
 1. Initiates the request to a ConcreteHandler object on the chain.
+
+## [Builder](https://www.javacodegeeks.com/2015/09/builder-design-pattern.html)
+The intent of the Builder Pattern is to separate the construction of a complex object from its representation, so that the same construction process can create different representations.
+
+<img src="https://www.javacodegeeks.com/wp-content/uploads/2015/09/builder_class_diagram.jpg" alt="Builder 1">
+
+Builder
+- Specifies an abstract interface for creating parts of a Product object.
+
+ConcreteBuilder
+- Constructs and assembles parts of the product by implementing the Builder interface.
+- Defines and keeps track of the representation it creates.
+- Provides an interface for retrieving the product.
+
+Director
+- Constructs an object using the Builder interface.
+
+Product
+- Represents the complex object under construction. ConcreteBuilder builds the product’s internal representation and defines the process by which it’s assembled.
+- Includes classes that define the constituent parts, including interfaces for assembling the parts into the final result.
