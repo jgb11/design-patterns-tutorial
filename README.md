@@ -7,7 +7,7 @@ Samples of most popular design patterns for java
 - Current Code with the old vendors's API (XPay in the example)
 <img src="https://www.javacodegeeks.com/wp-content/uploads/2015/09/adapter_pattern_1.jpg" alt="Adapter 1">
 
-- Now, the current codeToExecute interface is not compatible with the new vendor’s API. (PayD in the example)
+- Now, the current code interface is not compatible with the new vendor’s API. (PayD in the example)
 <img src="https://www.javacodegeeks.com/wp-content/uploads/2015/09/adapter_pattern_2.jpg" alt="Adapter 2">
 
 - Adapter solution
@@ -47,7 +47,7 @@ Samples of most popular design patterns for java
 - After implementing a Mediator the interaction between the classes looks like this, only containing a reference to the mediator.
 <img src="https://www.javacodegeeks.com/wp-content/uploads/2015/09/Mediatorclass_diagram_2.jpg" alt="Mediator 2">
 
-- Using a Mediator means the interaction codeToExecute has to reside in only one place, and that makes it easier to maintain.
+- Using a Mediator means the interaction code has to reside in only one place, and that makes it easier to maintain.
 - More formal structure of the Mediator Pattern.
 <img src="https://www.javacodegeeks.com/wp-content/uploads/2015/09/Mediatorclass_diagram_3.jpg" alt="Mediator 3">
 
