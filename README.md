@@ -127,3 +127,21 @@ FlyweightFactory
 Client
 - Maintains a reference to flyweight(s).
 - Computes or stores the extrinsic state of flyweight(s).
+
+## [Factory Method](https://www.javacodegeeks.com/2015/09/factory-method-design-pattern.html)
+The Factory Method Pattern gives us a way to encapsulate the instantiations of concrete types.
+
+<img src="https://www.javacodegeeks.com/wp-content/uploads/2015/09/Factoryclass_diagram_1.jpg" alt="Factory Method 1">
+
+Product
+- Defines the interface of objects the factory method creates.
+
+ConcreteProduct
+- Implements the Product interface.
+
+Creator
+- Declares the factory method, which returns an object of type Product. Creator may also define a default implementation of the factory method that returns a default ConcreteProduct object.
+- May call the factory method to create a Product object.
+
+ConcreteCreator
+- Overrides the factory method to return an instance of a ConcreteProduct.
