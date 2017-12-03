@@ -145,3 +145,24 @@ Creator
 
 ConcreteCreator
 - Overrides the factory method to return an instance of a ConcreteProduct.
+
+## [Abstract Factory](https://www.javacodegeeks.com/2015/09/abstract-factory-design-pattern.html)
+The Abstract Factory provides an interface for creating families of related or dependent objects without specifying their concrete classes.
+
+<img src="https://www.javacodegeeks.com/wp-content/uploads/2015/09/Abstractclass_diagram_1.jpg" alt="Abstract Factory 1">
+
+AbstractFactory
+- Declares an interface for operations that create abstract product objects.
+
+ConcreteFactory
+- Implements the operations to create concrete product objects.
+
+AbstractProduct
+- Declares an interface for a type of product object.
+
+ConcreteProduct
+- Defines a product object to be created by the corresponding concrete factory.
+- Implements the AbstractProduct interface.
+
+Client
+- Uses only interfaces declared by AbstractFactory and AbstractProduct classes.
