@@ -166,3 +166,17 @@ ConcreteProduct
 
 Client
 - Uses only interfaces declared by AbstractFactory and AbstractProduct classes.
+
+## [Prototype](https://www.javacodegeeks.com/2015/09/prototype-design-pattern.html)
+The Prototype design pattern is used to specify the kinds of objects to create using a prototypical instance, and create new objects by copying this prototype.
+
+<img src="https://www.javacodegeeks.com/wp-content/uploads/2015/09/PrototypePatternclass_diagram_11.jpg" alt="Prototype 1">
+
+Prototype
+- Declares an interface for cloning itself.
+
+ConcretePrototype
+- Implements an operation for cloning itself.
+
+Client
+- Creates a new object by asking a prototype to clone itself.
