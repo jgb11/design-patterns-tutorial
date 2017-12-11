@@ -197,3 +197,16 @@ Originator
 Caretaker
 - Is responsible for the memento’s safekeeping.
 - Never operates on or examines the contents of a memento.
+
+## [Template](https://www.javacodegeeks.com/2015/09/template-design-pattern.html)
+The Template Pattern defines the skeleton of an algorithm in an operation, deferring some steps to subclasses. Template Method lets subclasses to redefine certain steps of an algorithm without changing the algorithm’s structure.
+
+<img src="https://www.javacodegeeks.com/wp-content/uploads/2015/09/TemplatePatternclass_diagram_13.jpg" alt="Template 1">
+
+AbstractClass
+
+- Defines abstract primitive operations that concrete subclasses define to implement steps of an algorithm.
+- Implements a template method defining the skeleton of an algorithm. The template method calls primitive operations as well as operations defined in AbstractClass or those of other objects.
+
+ConcreteClass
+- Implements the primitive operations to carry.
