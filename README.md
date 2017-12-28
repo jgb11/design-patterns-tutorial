@@ -224,3 +224,19 @@ State
 
 ConcreteState subclasses
 - Each subclass implements a behavior associated with a state of the Context.
+
+## [Strategy](https://www.javacodegeeks.com/2015/09/strategy-design-pattern.html)
+The Strategy Design Pattern defines a family of algorithms, encapsulating each one, and making them interchangeable. Strategy lets the algorithm vary independently from the clients that use it.
+
+<img src="https://www.javacodegeeks.com/wp-content/uploads/2015/09/strategy_class_diagram_1.jpg" alt="Strategy 1">
+
+Strategy
+- Declares an interface common to all supported algorithms. Context uses this interface to call the algorithm defined by a ConcreteStrategy.
+
+ConcreteStrategy
+- Implements the algorithm using the Strategy interface.
+
+Context
+- Is configured with a ConcreteStrategy object.
+- Maintains a reference to a Strategy object.
+- May define an interface that lets Strategy access its data.
