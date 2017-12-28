@@ -204,9 +204,23 @@ The Template Pattern defines the skeleton of an algorithm in an operation, defer
 <img src="https://www.javacodegeeks.com/wp-content/uploads/2015/09/TemplatePatternclass_diagram_13.jpg" alt="Template 1">
 
 AbstractClass
-
 - Defines abstract primitive operations that concrete subclasses define to implement steps of an algorithm.
 - Implements a template method defining the skeleton of an algorithm. The template method calls primitive operations as well as operations defined in AbstractClass or those of other objects.
 
 ConcreteClass
 - Implements the primitive operations to carry.
+
+## [State](https://www.javacodegeeks.com/2015/09/state-design-pattern.html)
+The State Design Pattern allows an object to alter its behavior when its internal state changes. The object will appear to change its class.
+
+<img src="https://www.javacodegeeks.com/wp-content/uploads/2015/09/sta_design_pattern_class_diagram.jpg" alt="State 1">
+
+Context
+- Defines the interface of interest to clients.
+- Maintains an instance of a ConcreteState subclass that defines the current state.
+
+State
+- Defines an interface for encapsulating the behavior associated with a particular state of the Context.
+
+ConcreteState subclasses
+- Each subclass implements a behavior associated with a state of the Context.
