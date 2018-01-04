@@ -240,3 +240,25 @@ Context
 - Is configured with a ConcreteStrategy object.
 - Maintains a reference to a Strategy object.
 - May define an interface that lets Strategy access its data.
+
+
+## [Command](https://www.javacodegeeks.com/2015/09/command-design-pattern.html)
+The intent of the Command Design Pattern is to encapsulate a request as an object, thereby letting the developer to parameterize clients with different requests, queue or log requests, and support undoable operations.
+
+<img src="https://www.javacodegeeks.com/wp-content/uploads/2015/09/command_pattern_class_diagram_1.jpg" alt="Command 1">
+
+Command
+- Declares an interface for executing an operation.
+
+ConcreteCommand
+- Defines a binding between a Receiver object and an action.
+- Implements Execute by invoking the corresponding operation(s) on Receiver.
+
+Client
+- Creates a ConcreteCommand object and sets its receiver.
+
+Invoker
+- Asks the command to carry out the request.
+
+Receiver
+- Knows how to perform the operations associated with carrying out a request. Any class may serve as a Receiver.
