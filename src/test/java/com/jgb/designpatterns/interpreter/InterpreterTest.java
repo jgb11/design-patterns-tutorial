@@ -9,7 +9,7 @@ import static org.junit.Assert.assertEquals;
  * @author jgb
  * @since 05/01/2018 17:28
  */
-public class ExpressionUtilsTest {
+public class InterpreterTest {
 
     private Interpreter interpreter;
 
@@ -19,10 +19,16 @@ public class ExpressionUtilsTest {
     }
 
     @Test
-    public void getInterpreterIs() {
+    public void testInterpreterReturnCorrectValue() {
         final String tokenString = "7 3 - 2 1 + *";
         final int result = interpreter.parse(tokenString);
         System.out.println("\n( " + tokenString + " ): " + result);
         assertEquals("Expression result must be (7 - 4) * (2 + 1)", 12, result);
+    }
+
+    @Test(expected = UnsupportedOperationException.class)
+    public void testInterpreterThrowExceptionIfOperationNotFound() {
+        final String tokenString = "7 3 - 2 1 + :";
+        interpreter.parse(tokenString);
     }
 }

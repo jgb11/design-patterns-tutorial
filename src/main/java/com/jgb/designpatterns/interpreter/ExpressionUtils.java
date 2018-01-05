@@ -11,7 +11,7 @@ public class ExpressionUtils {
     }
 
     public static boolean isOperator(String s) {
-        return s.equals("+") || s.equals("-") || s.equals("*");
+        return s.equals("+") || s.equals("-") || s.equals("*") || s.equals(":");
     }
 
     public static Expression getOperator(String s, Expression left, Expression right) {
