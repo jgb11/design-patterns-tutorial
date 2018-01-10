@@ -286,3 +286,21 @@ Context
 Client
 - Builds (or is given) an abstract syntax tree representing a particular sentence in the language that the grammar defines. The abstract syntax tree is assembled from instances of the NonterminalExpression and TerminalExpression classes.
 - Invokes the Interpret operation.
+
+
+## [Decorator](https://www.javacodegeeks.com/2015/09/decorator-design-pattern.html)
+The intent of the Decorator Design Pattern is to attach additional responsibilities to an object dynamically. Decorators provide a flexible alternative to sub-classing for extending functionality.
+
+<img src="https://www.javacodegeeks.com/wp-content/uploads/2015/09/decorator_design_pattern_class_diagram_1.jpg" alt="Decorator 1">
+
+Component
+- Defines the interface for objects that can have responsibilities added to them dynamically.
+
+ConcreteComponent
+- Defines an object to which additional responsibilities can be attached.
+
+Decorator
+- Maintains a reference to a Component object and defines an interface that conforms to Component’s interface.
+
+ConcreteDecorator
+- Adds responsibilities to the component.
