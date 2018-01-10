@@ -305,7 +305,7 @@ Decorator
 ConcreteDecorator
 - Adds responsibilities to the component.
 
-## [Iterator](https://www.javacodegeeks.com/2015/09/iterator-design-pattern.htmll)
+## [Iterator](https://www.javacodegeeks.com/2015/09/iterator-design-pattern.html)
 The intent of the Iterator Design Pattern is to provide a way to access the elements of an aggregate object sequentially without exposing its underlying representation.
 
 <img src="https://www.javacodegeeks.com/wp-content/uploads/2015/09/iterator_design_pattern_class_diagram_1.jpg" alt="Iterator 1">
@@ -322,3 +322,24 @@ Aggregate
 
 ConcreteAggregate
 - Implements the Iterator creation interface to return an instance of the proper ConcreteIterator.
+
+## [Visitor](https://www.javacodegeeks.com/2015/09/visitor-design-pattern.html)
+
+<img src="https://www.javacodegeeks.com/wp-content/uploads/2015/09/visitor_design_pattern_class_diagram_1.jpg" alt="Visitor 1">
+
+Visitor
+- Declares a Visit operation for each class of ConcreteElement in the object structure. The operation’s name and signature identifies the class that sends the Visit request to the visitor. That lets the visitor determine the concrete class of the element being visited. Then the visitor can access the element directly through its particular interface.
+
+ConcreteVisitor
+- Implements each operation declared by Visitor. Each operation implements a fragment of the algorithm defined for the corresponding class of object in the structure. ConcreteVisitor provides the context for the algorithm and stores its local state. This state often accumulates results during the traversal of the structure.
+
+Element
+- Defines an Accept operation that takes a visitor as an argument.
+
+ConcreteElement
+- Implements an Accept operation that takes a visitor as an argument.
+
+ObjectStructure
+- Can enumerate its elements.
+- May provide a high-level interface to allow the visitor to visit its elements.
+- May either be a composite or a collection such as a list or a set.
