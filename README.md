@@ -304,3 +304,21 @@ Decorator
 
 ConcreteDecorator
 - Adds responsibilities to the component.
+
+## [Iterator](https://www.javacodegeeks.com/2015/09/iterator-design-pattern.htmll)
+The intent of the Iterator Design Pattern is to provide a way to access the elements of an aggregate object sequentially without exposing its underlying representation.
+
+<img src="https://www.javacodegeeks.com/wp-content/uploads/2015/09/iterator_design_pattern_class_diagram_1.jpg" alt="Iterator 1">
+
+Iterator
+- Defines an interface for accessing and traversing elements.
+
+ConcreteIterator
+- Implements the Iterator interface.
+- Keeps track of the current position in the traversal of the aggregate.
+
+Aggregate
+- Defines an interface for creating an Iterator object.
+
+ConcreteAggregate
+- Implements the Iterator creation interface to return an instance of the proper ConcreteIterator.
